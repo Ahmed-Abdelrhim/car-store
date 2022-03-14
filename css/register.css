@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --yellow: #ffd900;
+  --light-yellow: #ffee80;
+  --black: #130f40;
+  --light-color: #666;
+  --border: 1px solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #acacac;
+}
+::-webkit-scrollbar-thumb {
+  background: #da1e37;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  background: var(--light-yellow);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 8px 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 150px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--yellow);
+}
+
+.header #register-btn i,
+#login-btn i {
+  margin-left: 5px;
+  color: var(--light-color);
+  cursor: pointer;
+}
+#menu-btn {
+  font-size: 25px;
+  color: var(--light-color);
+  cursor: pointer;
+  display: none;
+}
+.header #register-btn .mo i,
+.header #login-btn .mo i {
+  display: none;
+}
+/* starts header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 5px 9%;
+  background: #4f0000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .home {
+  font-size: 25px;
+  color: var(--yellow);
+  cursor: pointer;
+}
+.header .home-mo {
+  display: none;
+}
+
+.header .logo {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.header .logo .s-one {
+  color: var(--yellow);
+  font-size: 30px;
+}
+
+.header .icon {
+  display: flex;
+}
+/* starts register */
+
+/* .register-form-container {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+.register-form-container.active {
+  top: 0;
+}
+
+.register-form-container .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 50px;
+  background-color: var(--light-yellow);
+  color: var(--main-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register-form-container .text ul {
+  list-style-type: none;
+}
+
+.register-form-container .text h2 {
+  color: var(--black);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.register-form-container .text ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.register-form-container .text ul li img {
+  margin-right: 8px !important;
+}
+
+.register-form-container form {
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  transform: translateY(-50%);
+  width: 30%;
+  height: 580px;
+  margin-top: 10px;
+  padding: 25px;
+  background-color: #fff;
+  color: var(--black);
+  border-radius: 5px;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  z-index: -1;
+}
+
+.register-form-container form h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.register-form-container .form-group {
+  width: 100%;
+  overflow: hidden;
+  padding: 8px 0;
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.form-group i {
+  color: var(--black);
+  width: 26px;
+  float: left;
+  position: relative;
+  left: 10px;
+  top: 12px;
+}
+.form-group input {
+  color: var(--light-color);
+  font-size: 20px;
+  width: 85%;
+  margin: 0 10px;
+  caret-color: var(--yellow);
+  text-transform: none;
+  border: var(--border);
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+form .m-t-lg {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+form .m-t-lg .btn {
+  display: block;
+  width: 100%;
+}
+.register-form-container form p {
+  padding: 10px 0;
+  font-size: 15px;
+  color: var(--light-color);
+  text-align: center;
+}
+.register-form-container form a {
+  font-size: 14px;
+  color: var(--yellow);
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+/* register ends */
+
+@media (max-width: 1300px) {
+  .register-form-container .text {
+    display: none;
+  }
+
+  .register-form-container form {
+    width: 100%;
+    right: 0px;
+    left: 0%;
+    top: 390px;
+  }
+  .register-form-container form a {
+    position: 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .icon .log {
+    display: flex;
+  }
+
+  .header #register-btn .btn,
+  .header #login-btn .btn {
+    display: none;
+  }
+
+  .header #register-btn .mo i,
+  .header #login-btn .mo i {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+  }
+
+  .header #register-btn .mo i:hover,
+  .header #login-btn .mo i:hover {
+    background-color: var(--yellow);
+  }
+
+  .header .home {
+    display: none;
+  }
+  .header .home-mo {
+    display: block;
+    font-size: 25px;
+    color: var(--yellow);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="40x40" href="./image/logo.jpg">
+        <!-- Render All Elements Normally -->
+        <link rel="stylesheet" href="css/normalis.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- font awsome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
+        <title>Top Cars</title>
+    </head>
+<body>
+    <!-- Statr Header -->
+    <header class="header">
+        
+        <a href="#" class="logo"> <i class="fas fa-car"></i> <span class="s-one">Top</span> <span class="s-two"> cars</span></a>
+        
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home"></i>home</a>
+            <a href="#vehicles">vehicles</a>
+            <a href="#services">services</a>
+            <a href="#featured">featured</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icon">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            
+            <div class="log">
+                <div id="login-btn">
+                    <a href="login.html" class="btn">Sign in<i class="far fa-user"></i></a>
+                    <a href="login.html" class="mo"><i class="far fa-user"></i></a>
+                    
+                </div>
+                <div id="register-btn">
+                    <a href="register.html" class="btn">Sign up<i class="fa fa-registered"></i></a>
+                    <a href="register.html" class="mo" ><i class="fa fa-registered"></i></a>
+                    
+                </div>
+            </div>
+
+            <div class="search" id="search">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="search-container">
+                
+                <span id="close-search" class="fas fa-times"></span>
+                <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off">
+                <i class="fa fa-search"></i>
+        </div>
+    </header>
+    <!-- End Heeader -->
+
+
+    <!-- Start Home -->
+    <section class="home" id="home">
+        <div class="images">
+            <img src="./image/WallpaperDog-10801985.jpg" id="currentImg" class="curImg" alt="landing">
+            <img src="./image/hyundai-ioniq-5-int-1001x565-(2).jpg" alt="landing">
+            <img src="./image/lycg-xl.jpg" alt="landing">
+            <img src="./image/Ford-Ranger-Raptor-Special-Edition-6.jpg" alt="landing">
+        </div>
+        
+        <div class="text">
+            <div class="box">
+                <h2>Love Your Car Guarantee!</h2>
+                <p>
+                    24-hr test drives <img src="image/image_icon_speedometer_pic_512x512.png" alt="icon">
+                    30-day retuns <br><span>(up to 1500mi)</span>
+                </p>
+                <a href="shop.html"><button class="btn">Find Your Car</button></a>
+            </div>
+        </div>
+
+        <div class="parallax">
+            <h1 class="home-parallax">find your car</h1>
+            <img src="./image/home-img.png" id="secondImg" calss="secImg" alt="home">
+            <a href="all_cars.html" class="btn home-parallax">explore all cars</a>
+        </div>
+
+        <div class="slide-left" onclick="side_slide(-1)">
+            <buttom id="pre-btn" class="prev"><i class="fas fa-angle-left left change-background fa-2x"></i></buttom>
+        </div>
+        <div class="slide-right" onclick="side_slide(1)">
+            <button id="next-btn" class="next"><i class="fas fa-angle-right right change-background fa-2x"></i></button>
+        </div>
+        
+        
+        <div class="row-dots">
+            <span class="dot active" onclick="btm_slide(1)"></span>
+            <span class="dot" onclick="btm_slide(2)"></span>
+            <span class="dot" onclick="btm_slide(3)"></span>
+            <span class="dot" onclick="btm_slide(4)"></span>
+        </div>
+    </section>
+    <!-- End Home -->
+
+    <!-- icons starts -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>15+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>4770+</h3>
+                <p>cars sold</p>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>720+</h3>
+                <p>happy clients</p>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>1500+</h3>
+                <p>news cars</p>
+            </div>
+        </div>
+    
+    </section>
+    <!-- icons ends -->
+
+    <!-- vehicles section statrs -->
+    <secttion class="vehicles" id="vehicles">
+
+        <h1 class="heading"> popular <span>vehicles</span></h1> 
+        <div class="swiper vehicles-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-1.png" alt="car">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $65000/- </div>
+                        <p>
+                            new 
+                            <span class="fas fa-circle"></span>2021
+                            <span class="fas fa-circle"></span>automatic
+                            <span class="fas fa-circle"></span>petrol
+                            <span class="fas fa-circle"></span>183mph
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-2.png" alt="car">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $65000/- </div>
+                        <p>
+                            new 
+                            <span class="fas fa-circle"></span>2021
+                            <span class="fas fa-circle"></span>automatic
+                            <span class="fas fa-circle"></span>petrol
+                            <span class="fas fa-circle"></span>183mph
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-3.png" alt="car">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $65000/- </div>
+                        <p>
+                            new 
+                            <span class="fas fa-circle"></span>2021
+                            <span class="fas fa-circle"></span>automatic
+                            <span class="fas fa-circle"></span>petrol
+                            <span class="fas fa-circle"></span>183mph
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-4.png" alt="car">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $65000/- </div>
+                        <p>
+                            new 
+                            <span class="fas fa-circle"></span>2021
+                            <span class="fas fa-circle"></span>automatic
+                            <span class="fas fa-circle"></span>petrol
+                            <span class="fas fa-circle"></span>183mph
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-5.png" alt="car">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $65000/- </div>
+                        <p>
+                            new 
+                            <span class="fas fa-circle"></span>2021
+                            <span class="fas fa-circle"></span>automatic
+                            <span class="fas fa-circle"></span>petrol
+                            <span class="fas fa-circle"></span>183mph
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-6.png" alt="car">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $65000/- </div>
+                        <p>
+                            new 
+                            <span class="fas fa-circle"></span>2021
+                            <span class="fas fa-circle"></span>automatic
+                            <span class="fas fa-circle"></span>petrol
+                            <span class="fas fa-circle"></span>183mph
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </secttion>
+    <!-- vehicles section ends -->
+
+    <!-- services section statrs -->
+    <section class="services" id="services">
+        <h1 class="heading"> our <span>services</span> </h1>
+        <div class="box-serv">
+            <h2>Service Options <br> Offered by Top Cars</h2>
+            <p>
+                Repairs and maintenance to help keep your car running smoothly
+            </p>
+            <img src="image/servicing-options-color-block.jpg" alt="services">
+        </div>
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>car selling</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3>parts repair</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>car insurance</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-car-battery"></i>
+                <h3>battery replacement</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+    
+        </div>
+    </section>
+    <!-- services section ends -->
+
+    <!-- Start Benefits -->
+    <div class="benefits">
+        <div class="benefits-container">
+            <h1>Top Cars customers getgreat benefits!</h1>
+            <div class="ben-box" id="btn">
+                <div class="srev">
+                    <img src="image/locations.png" alt="">
+                    <h3>Nationwide locations</h3>
+                    <p>We've partnered with RepairPal to provide you even more options when and where you need service.
+                    </p>
+                </div>
+                <div class="srev">
+                    <img src="image/guaranteed-repairs.png" alt="">
+                    <h3>Guaranteed repairs</h3>
+                    <p>Backed by a minimum 12,000-mile/12-month (whichever comes first) limited warranty for qualifying
+                        repairs.*</p>
+                </div>
+                <div class="srev">
+                    <img src="image/reduced-deductible.png" alt="">
+                    <h3>$50 reduced deductible**</h3>
+                    <p>A special benefit for our MaxCare® customers that applies to both Top Cars Service Center® and
+                        RepairPal Certified® Shops.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Benefits -->
+
+    <!-- starts featured -->
+    <section class="featured" id="featured">
+        <h1 class="heading"> <span>featured</span> cars </h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/car-1.png" alt="car">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car-2.png" alt="car">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car-3.png" alt="car">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car-4.png" alt="car">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/car-5.png" alt="car">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car-6.png" alt="car">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car-7.png" alt="car">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car-8.png" alt="car">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- ends featured -->
+
+    <!-- starts newsletter -->
+    <section class="newsletter">
+    
+        <h3>subscribe for latest updates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, suscipit.</p>
+    
+        <form action="">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="subscribe">
+        </form>
+    
+    </section>
+    <!-- ends newsletter -->
+
+    <!-- starts reviews -->
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading"> client's <span>review</span> </h1>
+    
+        <div class="swiper review-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide box">
+                    <img src="image/pic-1.png" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="image/pic-2.png" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="image/pic-3.png" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="image/pic-4.png" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="image/pic-5.png" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="image/pic-6.png" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="swiper-pagination"></div>
+    
+        </div>
+    
+    </section>
+    <!-- starts reviews -->
+    
+    <!-- starts contact -->
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span> us </h1>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.4212781848887!2d30.968020485024095!3d29.996057627812014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458573e2528ce39%3A0xf0eb0375dbbd4319!2z2KzYp9mF2LnYqSDZhdi12LEg2YTZhNi52YTZiNmFINmI2KfZhNiq2YPZhtmI2YTZiNis2YrYpw!5e0!3m2!1sar!2seg!4v1635464972948!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="your name" class="box">
+                <input type="email" placeholder="your email" class="box">
+                <input type="tel" placeholder="subject" class="box">
+                <textarea placeholder="your message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- ends contact -->
+
+    <!-- Start Fair -->
+    <div class="fair">
+        <div class="image">
+            <img src="image/upfront-fair-color-block.jpg" alt="upfront-fair">
+        </div>
+        <div class="fair-text">
+            <h2>Upfront and Fair</h2>
+            <p>Know what you’ll pay before the work is done.</p>
+        </div>
+    </div>
+    <!-- End Fair -->
+
+    <!-- Start question -->
+    <div class="question">
+        <div class="image">
+            <img src="image/faqs-illustration.svg" alt="illustration">
+        </div>
+        <div class="q-text">
+            <h2>Still have questions?</h2>
+            <a href="#">learn more about TopCars®</a>
+        </div>
+    </div>
+    <!-- End question -->
+
+    <!-- starts text -->
+    <div class="text-container">
+        <p class="text">*The minimum 12-month/12,000-mile limited warranty is subject to exclusions, including, but not
+            limited to,
+            normal wear and tear items such as tires, brake pads, clutches, wiper blades, etc.; wheel alignments; and
+            scheduled maintenance. See TopCars store or RepairPal Certified® Shop for written warranty details. For work
+            done at a RepairPal Certified Shop, the minimum 12-month/12,000-mile warranty is provided by the shop, and
+            TopCars is not responsible for the warranty, repair guarantee, or any charges or costs pertaining to the
+            repair of your vehicle.
+            <br>
+            **Reduced deductible is not valid for any extended service plans purchased in Oregon or Washington.
+            <br>
+            RepairPal Certified Shops are third-party service providers, and they are not owned or controlled by
+            TopCars.
+            RepairPal Certified Shops do not perform repairs under TopCars’s Limited Warranty, and they are not
+            necessarily affiliated with specific vehicle manufacturers. CarMax receives compensation for this
+            relationship.
+        </p>
+    </div>
+    <!-- starts text -->
+
+    <!-- start footer starts -->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> egypt </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> UK </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> australia </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#vehicles"> <i class="fas fa-arrow-right"></i> vehicles </a>
+                <a href="#services"> <i class="fas fa-arrow-right"></i> services </a>
+                <a href="#featured"> <i class="fas fa-arrow-right"></i> featured </a>
+                <a href="#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
+                <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> anas.rabea1000@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> 6 October, Egypt - 400104 </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-home"></i> home </a>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+        </div>
+        <div class="foot">
+            <p>We Are Social</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-home"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p class="copyright">Made With <i class="fa fa-heart"></i> By Anas Rabea&copy; 2021 <span>Top Cars
+                </span>All Right Reserved</p></div>
+    </div>
+    
+    <!-- start footer ends -->
+
+<!-- scroll top button  -->
+
+<span class="top"><img src="image/scroll-top-img.png" alt=""></span>
+
+<div class="chat" id="chat">
+    <div id="chat-overlay"></div>
+    <button> <i class="fas fa-comment-alt"></i> Chat </button>
+</div>
+
+<div class="chat-box">
+    <div class="chat-box-header">
+        Chat With TopCars
+        <span class="chat-box-toggle"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="chat-box-body">
+        <div class="chat-box-overlay">
+        </div>
+        <div class="chat-logs"></div> <!--chat-log -->
+    </div>
+    <div class="chat-input">
+        <form>
+            <input type="text" id="chat-input" placeholder="Send a message..."/>
+            <button type="submit" class="chat-submit" id="chat-submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+</div>
+
+<div class="feedback">
+    <a href="#contact"><img src="image/Qualtrics+feedback+button" alt="feedback"></a>
+</div>
+    
+    <!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+</body>
+</html>

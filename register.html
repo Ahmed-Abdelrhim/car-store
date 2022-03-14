@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="40x40" href="./image/logo.jpg">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalis.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- font awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/register.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
+    <title>Sing up Form</title>
+</head>
+
+<body>
+    <!-- Statr Header -->
+    <header class="header">
+    
+        <a href="index.html" class="home"><i class="fas fa-home"></i>home</a>
+        <a href="index.html" class="home-mo"><i class="fas fa-home"></i></a>
+        <a href="#" class="logo"> <i class="fas fa-car"></i> <span class="s-one">Top</span> <span class="s-two">
+                cars</span></a>
+        <div class="icon">
+    
+            <div class="log">
+                <div id="login-btn">
+                    <a href="login.html" class="btn">Sign in<i class="far fa-user"></i></a>
+                    <a href="login.html" class="mo"><i class="far fa-user"></i></a>
+    
+                </div>
+                <div id="register-btn">
+                    <a href="register.html" class="btn">Sign up<i class="fa fa-registered"></i></a>
+                    <a href="register.html" class="mo"><i class="fa fa-registered"></i></a>
+    
+                </div>
+    </header>
+    <!-- End Heeader -->
+
+    <!-- Start register form -->
+    <div class="register-form-container">
+        <div class="text">
+            <ul>
+                <h2>Why create a MyTopCars account?</h2>
+                <li><img alt="" src="image/icons/saved-searches.svg" aria-hidden="true" class="m-r-s" height="40"
+                        width="40">Access saved cars and searches</li>
+                <li><img alt="" src="image/icons/saved-cars.svg" aria-hidden="true" class="m-r-s" height="40"
+                        width="40">Compare your favorites</li>
+                <li><img alt="" src="image/icons/car-alerts.svg" aria-hidden="true" class="m-r-s" height="40" width="40">Set
+                    up new inventory alerts</li>
+                <li><img alt="" src="image/icons/account.svg" aria-hidden="true" class="m-r-s" height="40" width="40">Make
+                    car payments and manage finance account</li>
+            </ul>
+        </div>
+        <form action="">
+            <h1>Welcome to TopCars!</h1>
+            <div class="form-group">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input class="form-control" type="text" name="username" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input class="form-control" type="text" name="username" placeholder="Last Name" required />
+            </div>
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input class="form-control" type="text" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input class="form-control" type="password" name="password" placeholder="Password" required />
+            </div>
+            <div class="form-group">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input class="form-control" type="password" name="passwordRepeat" placeholder="Comfirm Password" required />
+            </div>
+            <div class="m-t-lg">
+                <input class="btn" type="Submit" value="REGISTER">
+                <input class="btn" type="reset" value="CANCEL">
+            </div>
+            <p>Already have an account!</p>
+            <a class="login-link" href="login.html"> Sign-In to your account </a>
+        </form>
+    </div>
+    <!-- End register form -->
+
+</body>
+
+</html>

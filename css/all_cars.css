@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+  --yellow: #ffd900;
+  --light-yellow: #ffee80;
+  --black: #130f40;
+  --light-color: #666;
+  --border: 1px solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #acacac;
+}
+::-webkit-scrollbar-thumb {
+  background: #da1e37;
+}
+
+.heading {
+  text-align: center;
+  font-size: 35px;
+  color: var(--black);
+  margin: auto;
+}
+.heading span {
+  position: relative;
+  z-index: 0;
+}
+.heading span::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--yellow);
+  clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0 100%);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: var(--light-yellow);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 8px 20px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--yellow);
+}
+
+/* starts header */
+.header {
+  position: fixed;
+  height: 90px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 10px 9%;
+  background: #4f0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .navbar a i {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #eee;
+  color: var(--black);
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 1100;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+
+.header .logo {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.header .logo .s-one {
+  color: var(--yellow);
+  font-size: 30px;
+}
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #eee;
+  padding: 20px;
+  border-right: var(--border);
+  overflow-y: scroll;
+}
+.side-bar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.side-bar .box {
+  border-bottom: var(--border);
+  padding: 20px 0;
+}
+
+/* Start Box */
+.box-1 {
+  color: #053361;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-1 img {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+}
+.box-1 p {
+  font-size: 10px;
+  line-height: 1.5625;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: rgb(109, 116, 122);
+}
+/* End Box */
+
+.side-bar .box .title {
+  margin-bottom: 10px;
+  color: var(--black);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.side-bar .btn {
+  margin-left: 5px;
+}
+
+.side-bar .btn.active {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.side-bar .box #search-box {
+  border: var(--border);
+  padding: 12px;
+  text-transform: none;
+  color: var(--black);
+  width: 100%;
+  font-size: 17px;
+}
+
+.side-bar .reset-btn .btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#side-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #eee;
+  color: var(--black);
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 1100;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  display: none;
+}
+
+.cars {
+  padding: 100px 100px 20px 320px;
+  text-align: center;
+}
+
+.car-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px 16px 0;
+  box-sizing: border-box;
+}
+
+.cars-list {
+  border: 1px solid #dedfe0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.5s;
+  color: #dedfe0;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(25% - 12px);
+  margin-bottom: 20px;
+}
+.cars-list img {
+  display: block;
+  width: 100%;
+  height: 187.31px;
+  opacity: 1;
+  transition: opacity 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.cars-list h3 {
+  color: #1773cf;
+  margin: 0 0 8px;
+  transition: none;
+  width: max-content;
+}
+.car-tile-content {
+  padding: 16px 16px 10px;
+  background-color: #fff;
+  color: #dedfe0;
+  text-align: left;
+}
+.cars-list h3 .year-make,
+.cars-list h3 .model {
+  display: block;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 1px;
+  font-size: 16px;
+  color: #1773cf;
+  font-weight: 400;
+  margin-top: 4px;
+  letter-spacing: normal;
+}
+.cars-list .info {
+  color: #545b63;
+  line-height: 24px;
+  letter-spacing: normal;
+  font-size: 25px;
+  margin-bottom: 8px;
+  padding-bottom: 0;
+  flex-wrap: wrap;
+}
+.cars-list hr {
+  border: solid #dedfe0;
+  border-width: 0 0 1px;
+  margin-top: 8px;
+}
+.cars-list .transfer {
+  display: block;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 1px;
+  margin-top: 8px;
+  color: #2a343d;
+  font-size: 12px;
+  letter-spacing: normal;
+}
+
+/* Start pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+  padding-left: 15%;
+}
+@media (max-width: 1200px) {
+  .pagination {
+    padding-left: 0%;
+  }
+}
+
+/* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: 800;
+  font-size: large;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: var(--yellow);
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+/* End pagination */
+
+.footer {
+  padding: 20px 9%;
+  background: var(--light-yellow);
+  text-align: center;
+  padding-left: 320px;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  color: var(--light-color);
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--black);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 1.5rem;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.foot p:not(.copyright) {
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee;
+  font-size: 22px;
+  width: fit-content;
+  margin: auto;
+  color: var(--black);
+}
+.foot .social-icons {
+  display: flex;
+  justify-content: center;
+}
+.foot .social-icons i {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.copyright {
+  color: var(--light-color);
+  font-size: 14px;
+}
+.copyright span {
+  color: var(--black);
+  font-weight: bold;
+}
+.fa-heart:before {
+  content: "\f004";
+  color: var(--black);
+}
+
+.top {
+  position: fixed;
+  bottom: 7.5rem;
+  right: 2rem;
+  z-index: 100;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.top img {
+  height: 60px;
+}
+
+.feedback {
+  cursor: pointer;
+  position: fixed;
+  top: auto;
+  bottom: 170px;
+  display: block;
+  background-color: transparent;
+  border: none;
+  z-index: 2000000000;
+  right: 0px;
+}
+@media (max-width: 1200px) {
+  #side-menu {
+    display: block;
+  }
+
+  #side-menu.fa-times {
+    top: 0;
+    left: 300px;
+  }
+
+  .side-bar {
+    left: -350px;
+  }
+
+  .side-bar.active {
+    box-shadow: 0 0 0 100vw var(--black);
+    left: 0;
+    z-index: 1000;
+  }
+  .footer {
+    padding: 20px 9%;
+    background: var(--light-yellow);
+  }
+  .cars {
+    padding: 100px;
+    text-align: center;
+    padding: 20px 9%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .car-container {
+    padding-top: 30%;
+    flex-direction: column;
+  }
+  .car-container {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 450px) {
+  #side-menu.fa-times {
+    top: 10px;
+    left: 10px;
+  }
+
+  .side-bar.active {
+    padding-top: 70px;
+  }
+}

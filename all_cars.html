@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="40x40" href="./image/logo.jpg">
+        <!-- Render All Elements Normally -->
+        <link rel="stylesheet" href="css/normalis.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- font awsome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/all_cars.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
+        <title>Top Cars</title>
+    </head>
+<body>
+    <!-- Statr Header -->
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-car"></i> <span class="s-one">Top</span> <span class="s-two"> cars</span></a>
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+        </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Start sied bar -->
+    <div id="side-menu" class="fas fa-bars"></div>
+    <div class="side-bar">
+        <h1 class="heading">Find Your Car</h1>
+        <!-- Start Box -->
+        <div class="box-1">
+            <img src="image/image_icon_speedometer_pic_512x512.png" alt="">
+            <h2>Introducing Love Your Car Guarantee!</h2>
+            <p>
+                24-hr test drives
+                30-day retuns <span>(up to 1500mi)</span>
+            </p>
+        </div>
+        <!-- End Box -->
+        <div class="box">
+            <h3 class="title">search Car :</h3>
+            <input type="text" placeholder="search Car.." id="search-box">
+        </div>
+        <div class="box">
+            <h3 class="title">Sort by type :</h3>
+            <div class="type">
+                <div class="btn active" data-brand="all"> all </div>
+                <div class="btn" data-brand="jeep">jeep</div>
+                <div class="btn" data-brand="bmw">bmw</div>
+                <div class="btn" data-brand="ford">ford</div>
+                <div class="btn" data-brand="toyota">toyota</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="title">Sort by color :</h3>
+            <div class="type">
+                <div class="btn active" data-color="all">all </div>
+                <div class="btn" data-color="red">red</div>
+                <div class="btn" data-color="blue">blue</div>
+                <div class="btn" data-color="white">white</div>
+                <div class="btn" data-color="black">black</div>
+            </div>
+        </div>
+        <div class="reset-btn">
+            <div class="btn">reset all</div>
+        </div>
+    </div>
+    <!-- End sied bar -->
+    
+    <!-- Start car section -->
+    <div class="cars">
+        <div class="car-container">
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="jeep.html">
+                    <div class="images-car">
+                        <img src="image/jeep cars/car1/1.png" alt="jeep">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="jeep.html">
+                            <span class="year-make">2019 Jeep</span>
+                            <span class="model"> Wrangler Unlimited Sahara </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$49,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">NEW</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="ford.html">
+                    <div class="images-car">
+                        <img src="image/ford cars/car1/1.png" alt="ford">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="ford.html">
+                            <span class="year-make">2018 Ford</span>
+                            <span class="model"> Mustang Ecoboost </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$32,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">New</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="jeep.html">
+                    <div class="images-car">
+                        <img src="image/jeep cars/car1/1.png" alt="jeep">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="jeep.html">
+                            <span class="year-make">2019 Jeep</span>
+                            <span class="model"> Wrangler Unlimited Sahara </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$49,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">NEW</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="ford.html">
+                    <div class="images-car">
+                        <img src="image/ford cars/car1/1.png" alt="ford">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="ford.html">
+                            <span class="year-make">2018 Ford</span>
+                            <span class="model"> Mustang Ecoboost </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$32,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">New</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="jeep.html">
+                    <div class="images-car">
+                        <img src="image/jeep cars/car1/1.png" alt="jeep">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="jeep.html">
+                            <span class="year-make">2019 Jeep</span>
+                            <span class="model"> Wrangler Unlimited Sahara </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$49,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">NEW</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="ford.html">
+                    <div class="images-car">
+                        <img src="image/ford cars/car1/1.png" alt="ford">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="ford.html">
+                            <span class="year-make">2018 Ford</span>
+                            <span class="model"> Mustang Ecoboost </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$32,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">New</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="jeep.html">
+                    <div class="images-car">
+                        <img src="image/jeep cars/car1/1.png" alt="jeep">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="jeep.html">
+                            <span class="year-make">2019 Jeep</span>
+                            <span class="model"> Wrangler Unlimited Sahara </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$49,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">NEW</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="ford.html">
+                    <div class="images-car">
+                        <img src="image/ford cars/car1/1.png" alt="ford">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="ford.html">
+                            <span class="year-make">2018 Ford</span>
+                            <span class="model"> Mustang Ecoboost </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$32,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">New</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="jeep.html">
+                    <div class="images-car">
+                        <img src="image/jeep cars/car1/1.png" alt="jeep">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="jeep.html">
+                            <span class="year-make">2019 Jeep</span>
+                            <span class="model"> Wrangler Unlimited Sahara </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$49,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">NEW</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="ford.html">
+                    <div class="images-car">
+                        <img src="image/ford cars/car1/1.png" alt="ford">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="ford.html">
+                            <span class="year-make">2018 Ford</span>
+                            <span class="model"> Mustang Ecoboost </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$32,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">New</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="jeep.html">
+                    <div class="images-car">
+                        <img src="image/jeep cars/car1/1.png" alt="jeep">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="jeep.html">
+                            <span class="year-make">2019 Jeep</span>
+                            <span class="model"> Wrangler Unlimited Sahara </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$49,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">NEW</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="ford.html">
+                    <div class="images-car">
+                        <img src="image/ford cars/car1/1.png" alt="ford">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="ford.html">
+                            <span class="year-make">2018 Ford</span>
+                            <span class="model"> Mustang Ecoboost </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$32,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">New</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="jeep.html">
+                    <div class="images-car">
+                        <img src="image/jeep cars/car1/1.png" alt="jeep">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="jeep.html">
+                            <span class="year-make">2019 Jeep</span>
+                            <span class="model"> Wrangler Unlimited Sahara </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$49,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">NEW</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="ford.html">
+                    <div class="images-car">
+                        <img src="image/ford cars/car1/1.png" alt="ford">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="ford.html">
+                            <span class="year-make">2018 Ford</span>
+                            <span class="model"> Mustang Ecoboost </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$32,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">New</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="jeep.html">
+                    <div class="images-car">
+                        <img src="image/jeep cars/car1/1.png" alt="jeep">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="jeep.html">
+                            <span class="year-make">2019 Jeep</span>
+                            <span class="model"> Wrangler Unlimited Sahara </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$49,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">NEW</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cars-list" data-cat="" data-search="">
+                <a href="ford.html">
+                    <div class="images-car">
+                        <img src="image/ford cars/car1/1.png" alt="ford">
+                    </div>
+                </a>
+                <div class="car-tile-content">
+                    <h3>
+                        <a href="ford.html">
+                            <span class="year-make">2018 Ford</span>
+                            <span class="model"> Mustang Ecoboost </span>
+                        </a>
+                    </h3>
+                    <p class="info">
+                        <span class="price">$32,998*</span>
+                        <span class="bullet"> • </span>
+                        <span class="miles">New</span>
+                    </p>
+                    <a class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
+                    <hr>
+                    <p>
+                        <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End car section -->
+
+    <!-- Start pagination sestion -->
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <!-- End pagination sestion -->
+
+    <!-- start footer starts -->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> egypt </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> UK </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> australia </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> anas.rabea1000@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> 6 October, Egypt - 400104 </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-home"></i> home </a>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+        </div>
+        <div class="foot">
+            <p>We Are Social</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-home"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p class="copyright">Made With <i class="fa fa-heart"></i> By Anas Rabea&copy; 2021 <span>Top Cars
+                </span>All Right Reserved</p>
+        </div>
+    </div>
+    
+    <!-- start footer ends -->
+    
+    <!-- scroll top button  -->
+    
+    <span class="top"><img src="image/scroll-top-img.png" alt=""></span>
+
+    <div class="feedback">
+        <a href="#"><img src="image/Qualtrics+feedback+button" alt="feedback"></a>
+    </div>
+    
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="js/allcar.js"></script>
+</body>
